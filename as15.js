@@ -45,6 +45,7 @@
 // console.log(rightShift(5,2));
  
 
+//solution=========================================
 
 
 
@@ -53,6 +54,15 @@
 // returns the second derivative of the function f(x)=x^b +x* (e^(b*m))
 // with respect to x evaluated at x=m, where b and m are constants.
  
+// function second(b,m){
+//     x = m
+//     secondDerivative = (b * (b-1) * Math.pow(x,(b-2))) + x * Math.pow(b*m,2) * Math.exp(b*m);
+//     return secondDerivative
+// }
+
+// console.log(second(2,2));
+
+//solution=========================================
 
 
 // 4). This Triangular Number Sequence is generated from a pattern of
