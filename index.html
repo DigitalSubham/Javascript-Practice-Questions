@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="text">ineuron</h2>
+    <h2>ineuron</h2>
+    <h2>ineuron</h2>
+    <h2>ineuron</h2>
+
+    <p>Hello 1</p>
+    <p>Hello 2</p>
+    <p>Hello 3</p>
+    <p>Hello 4</p>
+    <p>Hello 5</p>
+    <p>Hello 6</p>
+
+    <h3>Total no of p tags = <span id="count"></span></h3>
+
+    <button id="btn">Press</button>
+
+    <form id="form1" onsubmit="getFormValue()">
+      Name: <input type="text" id="name" /> <br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2 id="q9">hello</h2>
+
+    <input type="text" id="inp1" />
+    <input type="text" id="inp2" />
+    <button type="submit" onclick="add()">calculate</button>
+    <script>
+      1; // Select an <h2> tag with id of text and change its inner text to
+      // “Hello World”.
+
+      //   document.getElementById("text").innerText = "Hello World";
+
+      // 2.Apply following style to the same h2 using Javascript DOM
+      // Method.
+      // colour: red,
+      // fontWeight: bold,
+      // textTransform: uppercase
+
+      //   document.getElementById("text").style.color = "red";
+      //   document.getElementById("text").style.fontWeight = "bold";
+      //   document.getElementById("text").style.textTransform = "uppercase";
+
+      // 3.Create a simple calculator that takes the input from
+      // input1, input 2 and add them together.
+
+      //   function add() {
+      //     const a = document.getElementById("inp1").value;
+      //     const b = document.getElementById("inp2").value;
+      //     addition = Number(a) + Number(b);
+      //     alert(addition);
+      //   }
+
+      // 4. What is the error in the following code?
+
+      // paragragh has class = "text"
+      // inside script tag getElementById is used we have to use getelementbyclass
+      // document.getElementById("text").innerHTML = "HI JS DOM!"; => document.getElementsByClassName("text").innerHTML = "HI JS DOM!"
+
+      // 5. Using JS Dom select a button and set its onclick event to logging hello in the console.
+
+      //   const btn = document.getElementById("btn");
+      //   btn.onclick = function () {
+      //     console.log("hello");
+      //   };
+
+      //  6. Using alert, prevent a person from leaving the screen using JS DOM.
+
+      //   window.addEventListener("beforeunload", function (e) {
+      //     // Cancel the event
+      //     e.preventDefault();
+      //     // Chrome requires returnValue to be set
+      //     e.returnValue = "";
+      //     // Display an alert message
+      //     alert("Please don't leave!");
+      //   });
+
+      // 7. Select all the h2 tags on screen and change their colour to purple.
+
+      // const h2Tags = document.querySelectorAll("h2");
+      // h2Tags.forEach((tag) => {
+      //   tag.style.color = "purple";
+      // });
+
+      // 8. Create a new <h4> tag on the screen using JS DOM.
+      //   const q8 = document.createElement("h4");
+      //   q8.innerHTML = "H4 Tag";
+      //   document.body.appendChild(q8);
+
+      // 9. Remove an element from the screen using js dom.
+      //   const element = document.getElementById("text");
+      //   element.remove();
+
+      // 10. Get the number of <p> tags on the screen using JS DOM.
+      //   const count = document.getElementsByTagName("p");
+      //   document.getElementById("count").innerHTML = count.length;
+
+      // 11. Fetch the value of name from the following form.
+      //   function getFormValue() {
+      //     const nameInput = document.getElementById("name");
+      //     const nameValue = nameInput.value;
+      //     alert("Name: " + nameValue);
+      //   }
+    </script>
+  </body>
+</html>
