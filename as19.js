@@ -1,3 +1,4 @@
+// 1)
 // function job() {
 //   return new Promise(function (resolve, reject) {
 //     reject(err);
